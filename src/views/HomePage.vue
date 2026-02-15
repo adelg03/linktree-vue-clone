@@ -3,10 +3,10 @@ import { ref } from 'vue'
 import LinkCard from '@/components/LinkCard.vue'
 
 const profile = ref({
-  name: 'Rodolfo Roman',
-  slogan: 'Full Stack Developer and Teacher',
+  name: 'Ashley Delgadillo',
+  slogan: 'Student',
   avatar:
-    'https://api.dicebear.com/9.x/avataaars/svg?seed=Jack&accessories=sunglasses&accessoriesColor=25557c&accessoriesProbability=90&clothesColor=25557c&clothing=hoodie&clothingGraphic=pizza&eyebrows=defaultNatural&eyes=default&facialHair[]&facialHairColor[]&facialHairProbability=0&hairColor=4a312c&hatColor[]&mouth=twinkle&skinColor=edb98a&top=shortFlat&backgroundColor=c0aede',
+    'https://api.dicebear.com/9.x/lorelei/svg?beard[]&beardProbability=0&earrings[]&earringsProbability=0&eyebrows=variant10&eyes=variant21&glasses=variant04&glassesProbability=100&hair=variant15,variant16,variant21,variant23,variant24,variant30,variant35,variant37,variant40&mouth=happy01,happy02,happy03,happy04,happy05,happy06,happy07,happy08,happy09,happy10,happy11,happy12,happy13,happy14,happy15,happy16,happy17,happy18&backgroundColor=b6e3f4&seed=Jack',
 })
 </script>
 
@@ -28,7 +28,7 @@ const profile = ref({
     </div>
 
 
-    
+
     <!-- Link List -->
     <div class="flex w-full max-w-md flex-col gap-4">
       <LinkCard
