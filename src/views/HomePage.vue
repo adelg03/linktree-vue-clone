@@ -7,6 +7,22 @@ const profile = ref({
   slogan: 'Student',
   avatar:
     'https://api.dicebear.com/9.x/lorelei/svg?beard[]&beardProbability=0&earrings[]&earringsProbability=0&eyebrows=variant10&eyes=variant21&glasses=variant04&glassesProbability=100&hair=variant15,variant16,variant21,variant23,variant24,variant30,variant35,variant37,variant40&mouth=happy01,happy02,happy03,happy04,happy05,happy06,happy07,happy08,happy09,happy10,happy11,happy12,happy13,happy14,happy15,happy16,happy17,happy18&backgroundColor=b6e3f4&seed=Jack',
+  links: [
+    {
+      id: 1,
+      title: 'GitHub',
+      url: 'https://github.com/adelg03',
+      icon: 'code',
+      description: 'Check out my projects',
+    },
+    {
+      id: 2,
+      title: 'Expense Splitter',
+      url: 'https://expense-splitter-vue.ashleydelgadillo2002.workers.dev/',
+      icon: 'money',
+      description: 'My Expense Splitter Vue Project',
+    },
+  ],  
 })
 </script>
 
@@ -32,8 +48,12 @@ const profile = ref({
     <!-- Link List -->
     <div class="flex w-full max-w-md flex-col gap-4">
       <LinkCard
-        v-for="x of [1, 2, 3]"
-        :key="x"
+        v-for="link in profile.links"
+        :key="link.id"
+        :title="link.title"
+        :url="link.url"
+        :description="link.description"
+        :icon="link.icon"
       />
     </div>
 
